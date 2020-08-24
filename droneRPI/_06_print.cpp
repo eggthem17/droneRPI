@@ -7,7 +7,9 @@
 
 #include "_00_drone.h"
 
-void print(gyro_raw_t&){}//1
+void print(gyro_raw_t& gyro_raw){
+    printf("#RAW(X,Y,Z): %6d, %6d, %6d\n", gyro_raw.x, gyro_raw.y, gyro_raw.z);
+}//1
 void println(void){}//1
 void print(gyro_offset_t&){}//2
 void print(gyro_adj_t&){}//3

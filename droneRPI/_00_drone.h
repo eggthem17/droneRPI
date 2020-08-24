@@ -26,9 +26,9 @@
 
 #define I2C_SLAVE 0x0703
 
-typedef struct{int dummy;}i2c_t;//1
-typedef struct{int dummy;}mpu6050_t;//1
-typedef struct{int dummy;}gyro_raw_t;//1
+typedef struct{int port;}i2c_t;//1
+typedef struct{int8_t i2c_addr, PWR_MGMT_1, GYRO_XOUT_H, i2c_port;}mpu6050_t;//1
+typedef struct{int16_t x, y, z;}gyro_raw_t;//1
 typedef struct{int dummy;}gyro_offset_t;//2
 typedef struct{int dummy;}gyro_adj_t;//3
 typedef struct{int dummy;}gyro_rate_t;//4
@@ -39,7 +39,6 @@ typedef struct{int dummy;}balancing_force_t;//7
 typedef struct{int dummy;}throttle_t;//8
 typedef struct{int dummy;}motor_speed_t;//8
 typedef struct{int dummy;}hm10_t;//9
-//typedef struct{int dummy;}pca9685_t;//10
 typedef struct{int dummy;}motor_t;//10
 
 void init(i2c_t&);//1

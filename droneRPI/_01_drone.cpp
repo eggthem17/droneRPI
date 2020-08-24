@@ -9,7 +9,11 @@
 
 //declare variable
 i2c_t i2c;//1
-mpu6050_t mpu6050;//1
+mpu6050_t mpu6050 = {
+    .i2c_addr = 0x68,
+    .PWR_MGMT_1 = 0x6b,
+    .GYRO_XOUT_H = 0x43,
+};//1
 gyro_raw_t gyro_raw;//1
 gyro_offset_t gyro_offset;//2
 gyro_adj_t gyro_adj;//3
@@ -46,6 +50,11 @@ int main(){
         distribute(motor_speed, throttle, balancing_force);//8
         check(hm10, throttle, target_angle);//9
         update(pca9685, motor, motor_speed);//10
+        
+        static int cnt;
+        cnt++;
+        if(cnt%100 != 0)
+            continue;
         
         print(gyro_raw);//1
         print(gyro_offset);//2

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F338F4924F39592005EBED8 /* _01_drone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F3E24F39591005EBED8 /* _01_drone.cpp */; };
-		5F338F4A24F39592005EBED8 /* pca9685.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F3F24F39591005EBED8 /* pca9685.cpp */; };
-		5F338F4B24F39592005EBED8 /* _02_gyro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4024F39591005EBED8 /* _02_gyro.cpp */; };
-		5F338F4C24F39592005EBED8 /* _04_remote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4124F39591005EBED8 /* _04_remote.cpp */; };
-		5F338F4D24F39592005EBED8 /* _05_motor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4224F39591005EBED8 /* _05_motor.cpp */; };
-		5F338F4E24F39592005EBED8 /* mpu6050.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4324F39591005EBED8 /* mpu6050.cpp */; };
-		5F338F4F24F39592005EBED8 /* _06_print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4524F39591005EBED8 /* _06_print.cpp */; };
-		5F338F5024F39592005EBED8 /* _03_balancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4724F39591005EBED8 /* _03_balancing.cpp */; };
+		5F338F5C24F3BFD1005EBED8 /* _01_drone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5224F3BFD0005EBED8 /* _01_drone.cpp */; };
+		5F338F5D24F3BFD1005EBED8 /* _02_gyro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5324F3BFD0005EBED8 /* _02_gyro.cpp */; };
+		5F338F5E24F3BFD1005EBED8 /* _03_balancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5424F3BFD1005EBED8 /* _03_balancing.cpp */; };
+		5F338F5F24F3BFD1005EBED8 /* _06_print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5524F3BFD1005EBED8 /* _06_print.cpp */; };
+		5F338F6024F3BFD1005EBED8 /* mpu6050.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5724F3BFD1005EBED8 /* mpu6050.cpp */; };
+		5F338F6124F3BFD1005EBED8 /* pca9685.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5824F3BFD1005EBED8 /* pca9685.cpp */; };
+		5F338F6224F3BFD1005EBED8 /* _04_remote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5A24F3BFD1005EBED8 /* _04_remote.cpp */; };
+		5F338F6324F3BFD1005EBED8 /* _05_motor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F5B24F3BFD1005EBED8 /* _05_motor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,17 +31,17 @@
 
 /* Begin PBXFileReference section */
 		5F338F1F24F37F1A005EBED8 /* droneRPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = droneRPI; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F338F3E24F39591005EBED8 /* _01_drone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _01_drone.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_01_drone.cpp; sourceTree = "<group>"; };
-		5F338F3F24F39591005EBED8 /* pca9685.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pca9685.cpp; path = ../../../../../Volumes/pi/share/droneRPI/pca9685.cpp; sourceTree = "<group>"; };
-		5F338F4024F39591005EBED8 /* _02_gyro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _02_gyro.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_02_gyro.cpp; sourceTree = "<group>"; };
-		5F338F4124F39591005EBED8 /* _04_remote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _04_remote.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_04_remote.cpp; sourceTree = "<group>"; };
-		5F338F4224F39591005EBED8 /* _05_motor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _05_motor.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_05_motor.cpp; sourceTree = "<group>"; };
-		5F338F4324F39591005EBED8 /* mpu6050.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mpu6050.cpp; path = ../../../../../Volumes/pi/share/droneRPI/mpu6050.cpp; sourceTree = "<group>"; };
-		5F338F4424F39591005EBED8 /* pca9685.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pca9685.h; path = ../../../../../Volumes/pi/share/droneRPI/pca9685.h; sourceTree = "<group>"; };
-		5F338F4524F39591005EBED8 /* _06_print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _06_print.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_06_print.cpp; sourceTree = "<group>"; };
-		5F338F4624F39591005EBED8 /* _00_drone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _00_drone.h; path = ../../../../../Volumes/pi/share/droneRPI/_00_drone.h; sourceTree = "<group>"; };
-		5F338F4724F39591005EBED8 /* _03_balancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _03_balancing.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_03_balancing.cpp; sourceTree = "<group>"; };
-		5F338F4824F39591005EBED8 /* mpu6050_regs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mpu6050_regs.h; path = ../../../../../Volumes/pi/share/droneRPI/mpu6050_regs.h; sourceTree = "<group>"; };
+		5F338F5124F3BFD0005EBED8 /* mpu6050_regs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mpu6050_regs.h; path = ../../../../../Volumes/pi/share/droneRPI/mpu6050_regs.h; sourceTree = "<group>"; };
+		5F338F5224F3BFD0005EBED8 /* _01_drone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _01_drone.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_01_drone.cpp; sourceTree = "<group>"; };
+		5F338F5324F3BFD0005EBED8 /* _02_gyro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _02_gyro.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_02_gyro.cpp; sourceTree = "<group>"; };
+		5F338F5424F3BFD1005EBED8 /* _03_balancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _03_balancing.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_03_balancing.cpp; sourceTree = "<group>"; };
+		5F338F5524F3BFD1005EBED8 /* _06_print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _06_print.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_06_print.cpp; sourceTree = "<group>"; };
+		5F338F5624F3BFD1005EBED8 /* _00_drone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _00_drone.h; path = ../../../../../Volumes/pi/share/droneRPI/_00_drone.h; sourceTree = "<group>"; };
+		5F338F5724F3BFD1005EBED8 /* mpu6050.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mpu6050.cpp; path = ../../../../../Volumes/pi/share/droneRPI/mpu6050.cpp; sourceTree = "<group>"; };
+		5F338F5824F3BFD1005EBED8 /* pca9685.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pca9685.cpp; path = ../../../../../Volumes/pi/share/droneRPI/pca9685.cpp; sourceTree = "<group>"; };
+		5F338F5924F3BFD1005EBED8 /* pca9685.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pca9685.h; path = ../../../../../Volumes/pi/share/droneRPI/pca9685.h; sourceTree = "<group>"; };
+		5F338F5A24F3BFD1005EBED8 /* _04_remote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _04_remote.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_04_remote.cpp; sourceTree = "<group>"; };
+		5F338F5B24F3BFD1005EBED8 /* _05_motor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _05_motor.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_05_motor.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,17 +74,17 @@
 		5F338F2124F37F1A005EBED8 /* droneRPI */ = {
 			isa = PBXGroup;
 			children = (
-				5F338F4624F39591005EBED8 /* _00_drone.h */,
-				5F338F3E24F39591005EBED8 /* _01_drone.cpp */,
-				5F338F4024F39591005EBED8 /* _02_gyro.cpp */,
-				5F338F4724F39591005EBED8 /* _03_balancing.cpp */,
-				5F338F4124F39591005EBED8 /* _04_remote.cpp */,
-				5F338F4224F39591005EBED8 /* _05_motor.cpp */,
-				5F338F4524F39591005EBED8 /* _06_print.cpp */,
-				5F338F4824F39591005EBED8 /* mpu6050_regs.h */,
-				5F338F4324F39591005EBED8 /* mpu6050.cpp */,
-				5F338F3F24F39591005EBED8 /* pca9685.cpp */,
-				5F338F4424F39591005EBED8 /* pca9685.h */,
+				5F338F5624F3BFD1005EBED8 /* _00_drone.h */,
+				5F338F5224F3BFD0005EBED8 /* _01_drone.cpp */,
+				5F338F5324F3BFD0005EBED8 /* _02_gyro.cpp */,
+				5F338F5424F3BFD1005EBED8 /* _03_balancing.cpp */,
+				5F338F5A24F3BFD1005EBED8 /* _04_remote.cpp */,
+				5F338F5B24F3BFD1005EBED8 /* _05_motor.cpp */,
+				5F338F5524F3BFD1005EBED8 /* _06_print.cpp */,
+				5F338F5124F3BFD0005EBED8 /* mpu6050_regs.h */,
+				5F338F5724F3BFD1005EBED8 /* mpu6050.cpp */,
+				5F338F5824F3BFD1005EBED8 /* pca9685.cpp */,
+				5F338F5924F3BFD1005EBED8 /* pca9685.h */,
 			);
 			path = droneRPI;
 			sourceTree = "<group>";
@@ -146,14 +146,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F338F4A24F39592005EBED8 /* pca9685.cpp in Sources */,
-				5F338F4E24F39592005EBED8 /* mpu6050.cpp in Sources */,
-				5F338F5024F39592005EBED8 /* _03_balancing.cpp in Sources */,
-				5F338F4C24F39592005EBED8 /* _04_remote.cpp in Sources */,
-				5F338F4D24F39592005EBED8 /* _05_motor.cpp in Sources */,
-				5F338F4924F39592005EBED8 /* _01_drone.cpp in Sources */,
-				5F338F4F24F39592005EBED8 /* _06_print.cpp in Sources */,
-				5F338F4B24F39592005EBED8 /* _02_gyro.cpp in Sources */,
+				5F338F6024F3BFD1005EBED8 /* mpu6050.cpp in Sources */,
+				5F338F5D24F3BFD1005EBED8 /* _02_gyro.cpp in Sources */,
+				5F338F6324F3BFD1005EBED8 /* _05_motor.cpp in Sources */,
+				5F338F6224F3BFD1005EBED8 /* _04_remote.cpp in Sources */,
+				5F338F6124F3BFD1005EBED8 /* pca9685.cpp in Sources */,
+				5F338F5C24F3BFD1005EBED8 /* _01_drone.cpp in Sources */,
+				5F338F5E24F3BFD1005EBED8 /* _03_balancing.cpp in Sources */,
+				5F338F5F24F3BFD1005EBED8 /* _06_print.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
