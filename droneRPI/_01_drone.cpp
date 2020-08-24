@@ -56,7 +56,7 @@ int main(){
         if(cnt%100 != 0)
             continue;
         
-        print(gyro_raw);//1
+        //print(gyro_raw);//1
         print(gyro_offset);//2
         print(gyro_adj);//3
         print(gyro_rate);//4

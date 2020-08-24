@@ -31,7 +31,23 @@ void read(mpu6050_t& mpu6050, gyro_raw_t& gyro_raw){
     gyro_raw.z=(wiringPiI2CReadReg8(I2C_PORT, GYRO_XH+4)&0xFF)<<8;
     gyro_raw.z|=wiringPiI2CReadReg8(I2C_PORT, GYRO_XH+5)&0xFF;
 }//1
-void get(mpu6050_t&, gyro_offset_t&){}//2
+
+#define NSAMPLES 1000//2
+void get(mpu6050_t& mpu6050, gyro_offset_t& gyro_offset){
+    gyro_raw_t gyro_raw;
+    int32_t sumGyX=0, sumGyY=0, sumGyZ=0;
+    
+    for(int i=0;i<NSAMPLES;i++){
+        read(mpu6050, gyro_raw);
+        sumGyX += gyro_raw.x;
+        sumGyY += gyro_raw.y;
+        sumGyZ += gyro_raw.z;
+        delay(1);
+    }
+    gyro_offset.x=(double)sumGyX/NSAMPLES;
+    gyro_offset.y=(double)sumGyY/NSAMPLES;
+    gyro_offset.z=(double)sumGyZ/NSAMPLES;
+}//2
 void calc(gyro_adj_t&, gyro_raw_t&, gyro_offset_t&){}//3
 void calc(gyro_rate_t&, gyro_adj_t&){}//4
 void init(dt_t&){}//5

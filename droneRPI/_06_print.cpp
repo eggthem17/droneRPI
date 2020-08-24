@@ -11,7 +11,9 @@ void print(gyro_raw_t& gyro_raw){
     printf("#RAW(X,Y,Z): %6d, %6d, %6d\n", gyro_raw.x, gyro_raw.y, gyro_raw.z);
 }//1
 void println(void){}//1
-void print(gyro_offset_t&){}//2
+void print(gyro_offset_t& gyro_offset){
+    printf("#OFF(X,Y,Z): %6d, %6d, %6d\n", gyro_offset.x, gyro_offset.y, gyro_offset.z);
+}//2
 void print(gyro_adj_t&){}//3
 void print(gyro_rate_t&){}//4
 void print(dt_t&){}//5
