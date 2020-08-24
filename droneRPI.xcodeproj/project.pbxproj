@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F338F4924F39592005EBED8 /* _01_drone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F3E24F39591005EBED8 /* _01_drone.cpp */; };
+		5F338F4A24F39592005EBED8 /* pca9685.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F3F24F39591005EBED8 /* pca9685.cpp */; };
+		5F338F4B24F39592005EBED8 /* _02_gyro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4024F39591005EBED8 /* _02_gyro.cpp */; };
+		5F338F4C24F39592005EBED8 /* _04_remote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4124F39591005EBED8 /* _04_remote.cpp */; };
+		5F338F4D24F39592005EBED8 /* _05_motor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4224F39591005EBED8 /* _05_motor.cpp */; };
+		5F338F4E24F39592005EBED8 /* mpu6050.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4324F39591005EBED8 /* mpu6050.cpp */; };
+		5F338F4F24F39592005EBED8 /* _06_print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4524F39591005EBED8 /* _06_print.cpp */; };
+		5F338F5024F39592005EBED8 /* _03_balancing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F338F4724F39591005EBED8 /* _03_balancing.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F338F1D24F37F1A005EBED8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F338F1F24F37F1A005EBED8 /* droneRPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = droneRPI; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F338F3E24F39591005EBED8 /* _01_drone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _01_drone.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_01_drone.cpp; sourceTree = "<group>"; };
+		5F338F3F24F39591005EBED8 /* pca9685.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pca9685.cpp; path = ../../../../../Volumes/pi/share/droneRPI/pca9685.cpp; sourceTree = "<group>"; };
+		5F338F4024F39591005EBED8 /* _02_gyro.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _02_gyro.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_02_gyro.cpp; sourceTree = "<group>"; };
+		5F338F4124F39591005EBED8 /* _04_remote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _04_remote.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_04_remote.cpp; sourceTree = "<group>"; };
+		5F338F4224F39591005EBED8 /* _05_motor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _05_motor.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_05_motor.cpp; sourceTree = "<group>"; };
+		5F338F4324F39591005EBED8 /* mpu6050.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mpu6050.cpp; path = ../../../../../Volumes/pi/share/droneRPI/mpu6050.cpp; sourceTree = "<group>"; };
+		5F338F4424F39591005EBED8 /* pca9685.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pca9685.h; path = ../../../../../Volumes/pi/share/droneRPI/pca9685.h; sourceTree = "<group>"; };
+		5F338F4524F39591005EBED8 /* _06_print.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _06_print.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_06_print.cpp; sourceTree = "<group>"; };
+		5F338F4624F39591005EBED8 /* _00_drone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _00_drone.h; path = ../../../../../Volumes/pi/share/droneRPI/_00_drone.h; sourceTree = "<group>"; };
+		5F338F4724F39591005EBED8 /* _03_balancing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = _03_balancing.cpp; path = ../../../../../Volumes/pi/share/droneRPI/_03_balancing.cpp; sourceTree = "<group>"; };
+		5F338F4824F39591005EBED8 /* mpu6050_regs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mpu6050_regs.h; path = ../../../../../Volumes/pi/share/droneRPI/mpu6050_regs.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F338F1C24F37F1A005EBED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F338F1624F37F1A005EBED8 = {
+			isa = PBXGroup;
+			children = (
+				5F338F2124F37F1A005EBED8 /* droneRPI */,
+				5F338F2024F37F1A005EBED8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F338F2024F37F1A005EBED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F338F1F24F37F1A005EBED8 /* droneRPI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F338F2124F37F1A005EBED8 /* droneRPI */ = {
+			isa = PBXGroup;
+			children = (
+				5F338F4624F39591005EBED8 /* _00_drone.h */,
+				5F338F3E24F39591005EBED8 /* _01_drone.cpp */,
+				5F338F4024F39591005EBED8 /* _02_gyro.cpp */,
+				5F338F4724F39591005EBED8 /* _03_balancing.cpp */,
+				5F338F4124F39591005EBED8 /* _04_remote.cpp */,
+				5F338F4224F39591005EBED8 /* _05_motor.cpp */,
+				5F338F4524F39591005EBED8 /* _06_print.cpp */,
+				5F338F4824F39591005EBED8 /* mpu6050_regs.h */,
+				5F338F4324F39591005EBED8 /* mpu6050.cpp */,
+				5F338F3F24F39591005EBED8 /* pca9685.cpp */,
+				5F338F4424F39591005EBED8 /* pca9685.h */,
+			);
+			path = droneRPI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F338F1E24F37F1A005EBED8 /* droneRPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F338F2624F37F1A005EBED8 /* Build configuration list for PBXNativeTarget "droneRPI" */;
+			buildPhases = (
+				5F338F1B24F37F1A005EBED8 /* Sources */,
+				5F338F1C24F37F1A005EBED8 /* Frameworks */,
+				5F338F1D24F37F1A005EBED8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = droneRPI;
+			productName = droneRPI;
+			productReference = 5F338F1F24F37F1A005EBED8 /* droneRPI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F338F1724F37F1A005EBED8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Martin.Q;
+				TargetAttributes = {
+					5F338F1E24F37F1A005EBED8 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 5F338F1A24F37F1A005EBED8 /* Build configuration list for PBXProject "droneRPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F338F1624F37F1A005EBED8;
+			productRefGroup = 5F338F2024F37F1A005EBED8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F338F1E24F37F1A005EBED8 /* droneRPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F338F1B24F37F1A005EBED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F338F4A24F39592005EBED8 /* pca9685.cpp in Sources */,
+				5F338F4E24F39592005EBED8 /* mpu6050.cpp in Sources */,
+				5F338F5024F39592005EBED8 /* _03_balancing.cpp in Sources */,
+				5F338F4C24F39592005EBED8 /* _04_remote.cpp in Sources */,
+				5F338F4D24F39592005EBED8 /* _05_motor.cpp in Sources */,
+				5F338F4924F39592005EBED8 /* _01_drone.cpp in Sources */,
+				5F338F4F24F39592005EBED8 /* _06_print.cpp in Sources */,
+				5F338F4B24F39592005EBED8 /* _02_gyro.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5F338F2424F37F1A005EBED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F338F2524F37F1A005EBED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F338F2724F37F1A005EBED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F338F2824F37F1A005EBED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F338F1A24F37F1A005EBED8 /* Build configuration list for PBXProject "droneRPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F338F2424F37F1A005EBED8 /* Debug */,
+				5F338F2524F37F1A005EBED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F338F2624F37F1A005EBED8 /* Build configuration list for PBXNativeTarget "droneRPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F338F2724F37F1A005EBED8 /* Debug */,
+				5F338F2824F37F1A005EBED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F338F1724F37F1A005EBED8 /* Project object */;
+}
