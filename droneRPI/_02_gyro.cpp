@@ -14,11 +14,13 @@ void init(i2c_t& i2c){
         exit(-1);
     }
 }//1
+
 void init(i2c_t& i2c, mpu6050_t& mpu6050){
     mpu6050.i2c_port = i2c.port;
     ioctl(mpu6050.i2c_port, I2C_SLAVE, mpu6050.i2c_addr);
     wiringPiI2CWriteReg8(mpu6050.i2c_port, mpu6050.PWR_MGMT_1, 0);
 }//1
+
 void read(mpu6050_t& mpu6050, gyro_raw_t& gyro_raw){
     const int I2C_PORT = mpu6050.i2c_port;
     const int GYRO_XH = mpu6050.GYRO_XOUT_H;
@@ -48,7 +50,13 @@ void get(mpu6050_t& mpu6050, gyro_offset_t& gyro_offset){
     gyro_offset.y=(double)sumGyY/NSAMPLES;
     gyro_offset.z=(double)sumGyZ/NSAMPLES;
 }//2
-void calc(gyro_adj_t&, gyro_raw_t&, gyro_offset_t&){}//3
+
+void calc(gyro_adj_t& gyro_adj, gyro_raw_t& gyro_raw, gyro_offset_t& gyro_offset){
+    gyro_adj.x = gyro_raw.x - gyro_offset.x;
+    gyro_adj.y = gyro_raw.y - gyro_offset.y;
+    gyro_adj.z = gyro_raw.z - gyro_offset.z;
+}//3
+
 void calc(gyro_rate_t&, gyro_adj_t&){}//4
 void init(dt_t&){}//5
 void calc(dt_t&){}//5
