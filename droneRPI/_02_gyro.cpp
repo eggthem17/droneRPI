@@ -57,7 +57,12 @@ void calc(gyro_adj_t& gyro_adj, gyro_raw_t& gyro_raw, gyro_offset_t& gyro_offset
     gyro_adj.z = gyro_raw.z - gyro_offset.z;
 }//3
 
-void calc(gyro_rate_t&, gyro_adj_t&){}//4
+void calc(gyro_rate_t& gyro_rate, gyro_adj_t& gyro_adj){
+    gyro_rate.pitch=gyro_adj.x/131.0;
+    gyro_rate.roll=gyro_adj.y/131.0;
+    gyro_rate.yaw=gyro_adj.z/131.0;
+}//4
+
 void init(dt_t&){}//5
 void calc(dt_t&){}//5
 void calc(gyro_angle_t&, gyro_rate_t&, dt_t&){}//6

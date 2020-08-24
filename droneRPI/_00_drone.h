@@ -31,7 +31,7 @@ typedef struct{int8_t i2c_addr, PWR_MGMT_1, GYRO_XOUT_H, i2c_port;}mpu6050_t;//1
 typedef struct{int16_t x, y, z;}gyro_raw_t;//1
 typedef struct{int16_t x, y, z;}gyro_offset_t;//2
 typedef struct{int16_t x, y, z;}gyro_adj_t;//3
-typedef struct{int dummy;}gyro_rate_t;//4
+typedef struct{double pitch, roll, yaw;}gyro_rate_t;//4
 typedef struct{int dummy;}dt_t;//5
 typedef struct{int dummy;}gyro_angle_t;//6
 typedef struct{int dummy;}target_angle_t;//7

@@ -21,7 +21,9 @@ void print(gyro_adj_t& gyro_adj){
     printf("#ADJ(X,Y,Z): %6d, %6d, %6d\n", gyro_adj.x, gyro_adj.y, gyro_adj.z);
 }//3
 
-void print(gyro_rate_t&){}//4
+void print(gyro_rate_t& gyro_rate){
+    printf("#RATE(P,R,Y): %6.1f, %6.1f, %6.1f\n", gyro_rate.pitch, gyro_rate.roll, gyro_rate.yaw);
+}//4
 void print(dt_t&){}//5
 void print(gyro_angle_t&){}//6
 void print(balancing_force_t&){}//7

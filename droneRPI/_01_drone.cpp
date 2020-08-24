@@ -58,7 +58,7 @@ int main(){
         
         //print(gyro_raw);//1
         //print(gyro_offset);//2
-        print(gyro_adj);//3
+        //print(gyro_adj);//3
         print(gyro_rate);//4
         print(dt);//5
         print(gyro_angle);//6
