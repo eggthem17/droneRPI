@@ -1,5 +1,5 @@
 //
-//  PCA9685.h
+//  pca9685.h
 //  
 //
 //  Created by Martin.Q on 8/18/20.
