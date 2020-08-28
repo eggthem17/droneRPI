@@ -44,4 +44,4 @@ void setDuty(pca9685_t& pca9685, const int pin, const int duty_cycle){
     const int duty_off=duty_cycle&0x1FFF;
     
     wiringPiI2CWriteReg16(I2C_PORT, LED0_OFF_L+chan, duty_off);
-    }
+}

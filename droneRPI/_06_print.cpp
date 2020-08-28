@@ -30,7 +30,9 @@ void print(dt_t& dt){
 }//5
 
 void print(gyro_angle_t& gyro_angle){
-    printf("#ANGLE(P, R, Y): %6.1f, %6.1f, %6.1f\n", gyro_angle.pitch, gyro_angle.roll, gyro_angle.yaw);
+    printf("#ANGLE(P,R,Y): %6.1f, %6.1f, %6.1f\n", gyro_angle.pitch, gyro_angle.roll, gyro_angle.yaw);
 }//6
-void print(balancing_force_t&){}//7
+void print(balancing_force_t& balancing_force){
+    printf("#FORCE(P,R,Y): %6.1f, %6.1f, %6.1f\n", balancing_force.pitch, balancing_force.roll, balancing_force.yaw);
+}//7
 void print(motor_speed_t&){}//8
