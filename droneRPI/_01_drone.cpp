@@ -26,7 +26,7 @@ target_angle_t target_angle = {
     .yaw = 0.0,
 };//7
 balancing_force_t balancing_force;//7
-throttle_t throttle = {.value = 100.0,};//8
+throttle_t throttle = {.value = 0.0,};//8
 motor_speed_t motor_speed;//8
 hm10_t hm10;//9
 pca9685_t pca9685;//10

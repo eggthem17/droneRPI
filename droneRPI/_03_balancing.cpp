@@ -42,6 +42,13 @@ void distribute(motor_speed_t& motor_speed, throttle_t& throttle, balancing_forc
         motor_speed.d=0;
     if(motor_speed.d>250)
         motor_speed.d=250;
+    
+    if(throttle.value == 0){
+        motor_speed.a=0;
+        motor_speed.b=0;
+        motor_speed.c=0;
+        motor_speed.d=0;
+    }//9
 }//8
 void add(balancing_force_t&, gyro_rate_t&){}//11
 void add(balancing_force_t&, target_angle_t&, gyro_angle_t&, dt_t&){}//12

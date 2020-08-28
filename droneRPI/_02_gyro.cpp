@@ -76,4 +76,11 @@ void calc(gyro_angle_t& gyro_angle, gyro_rate_t& gyro_rate, dt_t& dt){
     gyro_angle.roll += gyro_rate.roll * dt.t_period;
     gyro_angle.pitch += gyro_rate.pitch * dt.t_period;
     gyro_angle.yaw += gyro_rate.yaw * dt.t_period;
+    
+    extern throttle_t throttle;//9
+    if(throttle.value == 0){
+        gyro_angle.roll = 0;
+        gyro_angle.pitch = 0;
+        gyro_angle.yaw = 0;
+    }
 }//6

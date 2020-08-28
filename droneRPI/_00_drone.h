@@ -38,7 +38,7 @@ typedef struct{double roll, pitch, yaw;}target_angle_t;//7
 typedef struct{double roll, pitch, yaw;}balancing_force_t;//7
 typedef struct{double value;}throttle_t;//8
 typedef struct{double a, b, c, d;}motor_speed_t;//8
-typedef struct{int dummy;}hm10_t;//9
+typedef struct{int serial_port;}hm10_t;//9
 typedef struct{int dummy;}motor_t;//10
 
 void init(i2c_t&);//1
