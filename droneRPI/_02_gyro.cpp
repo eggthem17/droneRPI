@@ -63,6 +63,12 @@ void calc(gyro_rate_t& gyro_rate, gyro_adj_t& gyro_adj){
     gyro_rate.yaw=gyro_adj.z/131.0;
 }//4
 
-void init(dt_t&){}//5
-void calc(dt_t&){}//5
+void init(dt_t& dt){
+    dt.t_prev-micros();
+}//5
+void calc(dt_t& dt){
+    dt.t_now = micros();
+    dt.t_period = (dt.t_now - dt.t_prev)/1000000.0;
+    dt.t_prev = dt.t_now;
+}//5
 void calc(gyro_angle_t&, gyro_rate_t&, dt_t&){}//6

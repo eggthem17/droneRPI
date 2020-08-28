@@ -32,7 +32,7 @@ typedef struct{int16_t x, y, z;}gyro_raw_t;//1
 typedef struct{int16_t x, y, z;}gyro_offset_t;//2
 typedef struct{int16_t x, y, z;}gyro_adj_t;//3
 typedef struct{double pitch, roll, yaw;}gyro_rate_t;//4
-typedef struct{int dummy;}dt_t;//5
+typedef struct{unsigned long t_prev, t_now; double t_period;}dt_t;//5
 typedef struct{int dummy;}gyro_angle_t;//6
 typedef struct{int dummy;}target_angle_t;//7
 typedef struct{int dummy;}balancing_force_t;//7
