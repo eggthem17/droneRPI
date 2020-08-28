@@ -35,4 +35,6 @@ void print(gyro_angle_t& gyro_angle){
 void print(balancing_force_t& balancing_force){
     printf("#FORCE(P,R,Y): %6.1f, %6.1f, %6.1f\n", balancing_force.pitch, balancing_force.roll, balancing_force.yaw);
 }//7
-void print(motor_speed_t&){}//8
+void print(motor_speed_t& motor_speed){
+    printf("#SPEED(A,B,C,D): %6.1f, %6.1f, %6.1f, %6.1f\n", motor_speed.a, motor_speed.b, motor_speed.c, motor_speed.d);
+}//8
