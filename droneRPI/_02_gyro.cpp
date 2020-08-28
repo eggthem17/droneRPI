@@ -71,4 +71,9 @@ void calc(dt_t& dt){
     dt.t_period = (dt.t_now - dt.t_prev)/1000000.0;
     dt.t_prev = dt.t_now;
 }//5
-void calc(gyro_angle_t&, gyro_rate_t&, dt_t&){}//6
+
+void calc(gyro_angle_t& gyro_angle, gyro_rate_t& gyro_rate, dt_t& dt){
+    gyro_angle.roll += gyro_rate.roll * dt.t_period;
+    gyro_angle.pitch += gyro_rate.pitch * dt.t_period;
+    gyro_angle.yaw += gyro_rate.yaw * dt.t_period;
+}//6

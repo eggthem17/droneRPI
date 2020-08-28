@@ -24,9 +24,13 @@ void print(gyro_adj_t& gyro_adj){
 void print(gyro_rate_t& gyro_rate){
     printf("#RATE(P,R,Y): %6.1f, %6.1f, %6.1f\n", gyro_rate.pitch, gyro_rate.roll, gyro_rate.yaw);
 }//4
+
 void print(dt_t& dt){
-    printf("#DT:%6.6f", dt.t_period);
+    printf("#DT: %6.6f\n", dt.t_period);
 }//5
-void print(gyro_angle_t&){}//6
+
+void print(gyro_angle_t& gyro_angle){
+    printf("#ANGLE(P, R, Y): %6.1f, %6.1f, %6.1f\n", gyro_angle.pitch, gyro_angle.roll, gyro_angle.yaw);
+}//6
 void print(balancing_force_t&){}//7
 void print(motor_speed_t&){}//8

@@ -60,7 +60,7 @@ int main(){
         //print(gyro_offset);//2
         //print(gyro_adj);//3
         //print(gyro_rate);//4
-        print(dt);//5
+        //print(dt);//5
         print(gyro_angle);//6
         print(balancing_force);//7
         print(motor_speed);//8
