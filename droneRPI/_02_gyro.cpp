@@ -58,13 +58,13 @@ void calc(gyro_adj_t& gyro_adj, gyro_raw_t& gyro_raw, gyro_offset_t& gyro_offset
 }//3
 
 void calc(gyro_rate_t& gyro_rate, gyro_adj_t& gyro_adj){
-    gyro_rate.pitch=gyro_adj.x/131.0;
     gyro_rate.roll=gyro_adj.y/131.0;
+    gyro_rate.pitch=gyro_adj.x/131.0;
     gyro_rate.yaw=gyro_adj.z/131.0;
 }//4
 
 void init(dt_t& dt){
-    dt.t_prev-micros();
+    dt.t_prev=micros();
 }//5
 void calc(dt_t& dt){
     dt.t_now = micros();

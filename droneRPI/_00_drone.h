@@ -31,7 +31,7 @@ typedef struct{int8_t i2c_addr, PWR_MGMT_1, GYRO_XOUT_H, i2c_port;}mpu6050_t;//1
 typedef struct{int16_t x, y, z;}gyro_raw_t;//1
 typedef struct{int16_t x, y, z;}gyro_offset_t;//2
 typedef struct{int16_t x, y, z;}gyro_adj_t;//3
-typedef struct{double pitch, roll, yaw;}gyro_rate_t;//4
+typedef struct{double roll, pitch, yaw;}gyro_rate_t;//4
 typedef struct{unsigned long t_prev, t_now; double t_period;}dt_t;//5
 typedef struct{double roll, pitch, yaw;}gyro_angle_t;//6
 typedef struct{double roll, pitch, yaw;}target_angle_t;//7
@@ -39,7 +39,8 @@ typedef struct{double roll, pitch, yaw;}balancing_force_t;//7
 typedef struct{double value;}throttle_t;//8
 typedef struct{double a, b, c, d;}motor_speed_t;//8
 typedef struct{int serial_port;}hm10_t;//9
-typedef struct{int dummy;}motor_t;//10
+//typedef struct{int dummy;}pca9685_t
+typedef struct{int a ,b ,c ,d;}motor_t;//10
 
 void init(i2c_t&);//1
 void init(i2c_t&, mpu6050_t&);//1

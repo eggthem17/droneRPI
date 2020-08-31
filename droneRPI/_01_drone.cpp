@@ -26,11 +26,17 @@ target_angle_t target_angle = {
     .yaw = 0.0,
 };//7
 balancing_force_t balancing_force;//7
-throttle_t throttle = {.value = 0.0,};//8
+throttle_t throttle = {.value = 0,};//8
 motor_speed_t motor_speed;//8
 hm10_t hm10;//9
-pca9685_t pca9685;//10
-motor_t motor;//10
+pca9685_t pca9685={.i2c_addr = 0x40,};//10
+motor_t motor = {
+    .a = 0,
+    .b = 2,
+    .c = 1,
+    .d = 3,
+    
+};//10
 
 //make whole code
 int main(){
@@ -55,19 +61,19 @@ int main(){
         check(hm10, throttle, target_angle);//9
         update(pca9685, motor, motor_speed);//10
         
-        static int cnt;
-        cnt++;
-        if(cnt%100 != 0)
-            continue;
+        //static int cnt;//1
+        //cnt++;//1
+        //if(cnt%100 != 0)
+            //continue;//1
         
         //print(gyro_raw);//1
         //print(gyro_offset);//2
         //print(gyro_adj);//3
         //print(gyro_rate);//4
         //print(dt);//5
-        print(gyro_angle);//6
-        print(balancing_force);//7
-        print(motor_speed);//8
-        println();//1
+        //print(gyro_angle);//6
+        //print(balancing_force);//7
+        //print(motor_speed);//8
+        //println();//1
     }
 }
